@@ -1,10 +1,18 @@
 .tab-header-background {
     -fx-background-color: rgba(38, 38, 38, 0.76);
     -fx-background-radius: 50px 50px 0 0; /* Redondea solo las esquinas inferiores */
-    -fx-border-radius: 50px 50px 0 0; /* Aplica el mismo radio si hay bordes */
+    -fx-border-radius: 50px 50px 0 0;
 }
 
 .tab-pane .tab {
     -fx-focus-color: transparent;
     -fx-faint-focus-color: transparent;
 }
+
+.letra3D {
+    -fx-font: bold 25px "Arial";
+    -fx-text-fill: linear-gradient(to bottom, #ffffff, #9b9b9b);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 5, 0.5, 2, 2);
+    -fx-background-color: transparent;
+}
+
