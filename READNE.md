@@ -1,0 +1,1 @@
+Este es un ejerccio para copiar la intefaz de unas aplicaiones de domotica, esta es una mezcla de diferentes aplicaciones, entre ellas Philips_Hue, spotify y un par mas.
