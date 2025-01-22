@@ -1,5 +1,10 @@
 .tab-header-background {
-    -fx-background-color: rgb(64, 187, 192);
+    -fx-background-color: rgba(38, 38, 38, 0.76);
     -fx-background-radius: 50px 50px 0 0; /* Redondea solo las esquinas inferiores */
     -fx-border-radius: 50px 50px 0 0; /* Aplica el mismo radio si hay bordes */
+}
+
+.tab-pane .tab {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
 }

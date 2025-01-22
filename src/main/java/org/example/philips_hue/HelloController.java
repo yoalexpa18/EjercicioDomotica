@@ -36,6 +36,14 @@ public class HelloController {
     private Button botonDomitorio;
     @FXML
     private Button botonExterior;
+    @FXML
+    private Button botonMusicaComedor;
+    @FXML
+    private Button botonMusicaDormitorio;
+    @FXML
+    private Button botonMusicaCocina;
+    @FXML
+    private Button botonMusicaBaño;
 
 
     @FXML
@@ -57,6 +65,13 @@ public class HelloController {
         botonCocina.setOnAction(e -> alternarImagen(botonCocina, "Cocina.png", "CocinaOsc.png", estadoBoton2));
         botonDomitorio.setOnAction(e -> alternarImagen(botonDomitorio, "Exterior.png", "ExteriorOsc.png", estadoBoton3));
         botonExterior.setOnAction(e -> alternarImagen(botonExterior, "Dormitorio.png", "DormitorioOsc.png", estadoBoton4));
+
+        // Configurar el método genérico para los botones de música
+        botonMusicaComedor.setOnAction(e -> habilitarBotonesMusica(botonMusicaComedor, estadoBotonMusicaComedor));
+        botonMusicaDormitorio.setOnAction(e -> habilitarBotonesMusica(botonMusicaDormitorio, estadoBotonMusicaDormitorio));
+        botonMusicaCocina.setOnAction(e -> habilitarBotonesMusica(botonMusicaCocina, estadoBotonMusicaCocina));
+        botonMusicaBaño.setOnAction(e -> habilitarBotonesMusica(botonMusicaBaño, estadoBotonMusicaBaño));
+
     }
 
 
@@ -195,11 +210,11 @@ public class HelloController {
         if (estaIniciado) {
 
             //Cambiar la imagen a "pause"
-            botonPlayPause.setStyle("-fx-background-radius: 150;-fx-background-image: url('pause.png'); -fx-background-size: cover; -fx-background-position: center;");
+            botonPlayPause.setStyle("-fx-background-radius: 150;-fx-background-image: url('play.png'); -fx-background-size: cover; -fx-background-position: center;");
         } else {
 
             //Cambiar la imagen a "play"
-            botonPlayPause.setStyle("-fx-background-radius: 150;-fx-background-image: url('play.png'); -fx-background-size: cover; -fx-background-position: center;");
+            botonPlayPause.setStyle("-fx-background-radius: 150;-fx-background-image: url('pause.png'); -fx-background-size: cover; -fx-background-position: center;");
         }
 
         //Alternar el estado
@@ -254,4 +269,19 @@ public class HelloController {
                         "-fx-background-position: center;"
         );
     }
+
+
+    private boolean[] estadoBotonMusicaComedor = {true};
+    private boolean[] estadoBotonMusicaDormitorio = {true};
+    private boolean[] estadoBotonMusicaCocina = {true};
+    private boolean[] estadoBotonMusicaBaño = {true};
+
+    private void habilitarBotonesMusica(Button boton, boolean[] estadoActual) {
+        estadoActual[0] = !estadoActual[0];
+        String nuevoEstilo = estadoActual[0]
+                ? "-fx-background-color: linear-gradient(to bottom, #287f83, #06779b, #066c9a);" // Degradado oscuro
+                : "-fx-background-color: linear-gradient(to bottom, #48bfc3, #08abdf, #07abdf);"; // Degradado claro
+        boton.setStyle(nuevoEstilo);
+    }
+
 }
