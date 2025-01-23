@@ -107,6 +107,7 @@
                                       </Button>
                            </children>
                         </Pane>
+                        <Text fill="WHITE" layoutX="127.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 35;" styleClass="letra3D" text="Garaje" />
                             </children>
                         </AnchorPane>
                     </content>
@@ -142,27 +143,27 @@
                                        <effect>
                                           <DropShadow offsetX="3.0" offsetY="3.0" />
                                        </effect></Button>
-                                                <Button fx:id="botonDomitorio" layoutX="28.0" layoutY="336.0" mnemonicParsing="false" onAction="#initialize" prefHeight="150.0" prefWidth="300.0" style="-fx-background-radius: 70; -fx-background-image: url('Exterior.png'); -fx-background-size: 300 150; -fx-background-position: center;">
+                                                <Button fx:id="botonDomitorio" layoutX="28.0" layoutY="382.0" mnemonicParsing="false" onAction="#initialize" prefHeight="150.0" prefWidth="300.0" style="-fx-background-radius: 70; -fx-background-image: url('Exterior.png'); -fx-background-size: 300 150; -fx-background-position: center;">
                                        <effect>
                                           <DropShadow offsetX="3.0" offsetY="3.0" />
                                        </effect></Button>
-                                                <Button fx:id="botonCocina" layoutX="28.0" layoutY="177.0" mnemonicParsing="false" onAction="#initialize" prefHeight="150.0" prefWidth="300.0" style="-fx-background-radius: 70; -fx-background-image: url('Cocina.png'); -fx-background-size: 300 150; -fx-background-position: center;">
+                                                <Button fx:id="botonCocina" layoutX="28.0" layoutY="201.0" mnemonicParsing="false" onAction="#initialize" prefHeight="150.0" prefWidth="300.0" style="-fx-background-radius: 70; -fx-background-image: url('Cocina.png'); -fx-background-size: 300 150; -fx-background-position: center;">
                                        <effect>
                                           <DropShadow offsetX="3.0" offsetY="3.0" />
                                        </effect></Button>
-                                                <Button fx:id="botonExterior" layoutX="28.0" layoutY="494.0" mnemonicParsing="false" onAction="#initialize" prefHeight="150.0" prefWidth="300.0" style="-fx-background-radius: 70; -fx-background-image: url('Dormitorio.png'); -fx-background-size: 300 150; -fx-background-position: center;">
+                                                <Button fx:id="botonExterior" layoutX="28.0" layoutY="556.0" mnemonicParsing="false" onAction="#initialize" prefHeight="150.0" prefWidth="300.0" style="-fx-background-radius: 70; -fx-background-image: url('Dormitorio.png'); -fx-background-size: 300 150; -fx-background-position: center;">
                                        <effect>
                                           <DropShadow offsetX="3.0" offsetY="3.0" />
                                        </effect></Button>
-                                                <Text fill="WHITE" layoutX="68.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="letra3D" text="Exterior">
+                                                <Text fill="WHITE" layoutX="68.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="letra3D" text="Exterior">
                                        <font>
                                           <Font name="Arial" size="25.0" />
                                        </font></Text>
-                                                <Text fill="WHITE" layoutX="68.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="letra3D" text="Dormitorio" wrappingWidth="134.13671875">
+                                                <Text fill="WHITE" layoutX="68.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="letra3D" text="Dormitorio" wrappingWidth="134.13671875">
                                        <font>
                                           <Font name="Arial" size="25.0" />
                                        </font></Text>
-                                                <Text fill="WHITE" layoutX="64.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="letra3D" text="Cocina" wrappingWidth="101.13671875">
+                                                <Text fill="WHITE" layoutX="64.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="letra3D" text="Cocina" wrappingWidth="101.13671875">
                                        <font>
                                           <Font name="Arial" size="25.0" />
                                        </font></Text>
@@ -224,7 +225,7 @@
                                         <DropShadow height="20.0" offsetX="5.0" offsetY="5.0" radius="9.5" width="20.0" />
                                     </effect>
                                 </ImageView>
-                                <Text fx:id="textMusica" fill="WHITE" layoutX="169.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                <Text fx:id="textMusica" fill="WHITE" layoutX="143.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="letra3D" wrappingWidth="77.0" />
                                 <Text fill="WHITE" layoutX="88.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="letra3D" text="Un verano sin ti">
                                     <font>
                                         <Font size="26.0" />
@@ -257,6 +258,5 @@
                 </DropShadow>
             </effect>
         </TabPane>
-      <Text layoutX="-244.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
     </children>
 </Pane>
